@@ -86,7 +86,7 @@ svg {
 }
 
 .patch-text {
-    fill: var(--cardigan-blue);
+    fill: var(--cardigan-cream);
     font-family: Arial, sans-serif;
     font-size: 28px;
     font-weight: bold;
@@ -97,6 +97,14 @@ svg {
     transition: all 0.3s ease;
 }
 
+#about-link .patch-text,
+#job-link .patch-text,
+#location-link .patch-text {
+    opacity: 1; /* Show text by default for the About patch */
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px var(--cardigan-blue);
+}
+
 /* Show text on hover */
 /* Shared hover effects using class selector */
 .patch-link:hover .patch {
@@ -105,8 +113,9 @@ svg {
 
 .patch-link:hover .patch-text {
     opacity: 1;
+    
     fill: var(--cardigan-cream);
-    text-shadow: 2px 2px 4px var(--cardigan-blue);
+    text-shadow: 2px 2px 4px var(--cardigan-purple);
 }
 
 /* Overlay positioned above everything */
