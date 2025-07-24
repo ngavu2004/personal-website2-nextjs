@@ -57,6 +57,70 @@ body {
     max-width: none; /* Remove max-width constraint */
 }
 
+/* Overlay positioned above everything */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3; /* Highest z-index */
+    pointer-events: none; /* Allow clicks to pass through to patches */
+    display: flex;
+    align-items: flex-start; /* Changed from 'center' to 'flex-start' */
+    justify-content: center; /* Keep horizontal centering */
+}
+
+.content {
+    color: var(--text-light);
+    text-align: center;
+    pointer-events: auto; /* Re-enable pointer events for content */
+    /* background: rgba(0, 0, 0, 0.3); Optional: semi-transparent background */
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+p {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Option 1: Profile section with content */
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-direction: row;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.profile-image {
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  /* border: 1px solid var(--cardigan-blue); */
+  box-shadow: 0 8px 32px var(--cardigan-purple);
+  background: var(--cardigan-cream);
+}
+
+.profile-pic {
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+
+
 .background-image {
     width: 100%;
     height: 100%;
@@ -117,35 +181,3 @@ svg {
     text-shadow: 2px 2px 4px var(--cardigan-purple);
 }
 
-/* Overlay positioned above everything */
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 3; /* Highest z-index */
-    pointer-events: none; /* Allow clicks to pass through to patches */
-    display: flex;
-    align-items: flex-start; /* Changed from 'center' to 'flex-start' */
-    justify-content: center; /* Keep horizontal centering */
-}
-
-.content {
-    color: var(--text-light);
-    text-align: center;
-    pointer-events: auto; /* Re-enable pointer events for content */
-    /* background: rgba(0, 0, 0, 0.3); Optional: semi-transparent background */
-    border-radius: 10px;
-}
-
-h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-p {
-    font-size: 1.2rem;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-}
