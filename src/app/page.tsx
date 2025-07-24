@@ -6,8 +6,8 @@ export default function Home() {
     <div className="container">
       <div className="overlay">
         <div className="content">
-          <h1>Welcome to My Website</h1>
-          <p>Come and explore every pieces of me!</p>
+          <h1>Nga (Jane) Vu</h1>
+          <p>Software Engineer | 📍Tempe,AZ</p>
         </div>
       </div>
       

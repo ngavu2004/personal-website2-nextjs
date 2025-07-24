@@ -9,9 +9,9 @@ export default function InteractivePatches() {
         <g className="patch-group">
           <polygon 
             className="patch" 
-            points="401.5,557 338.5,671 523,665.5 518.5,734.5 700.5,697 635.5,515.5 401.5,557" 
+            points="441.5,393.5 403.5,554 633.5,515.5 579.5,380 441.5,393.5" 
           />
-          <text x="520" y="600" className="patch-text">Nga Vu</text>
+          <text x="520" y="450" className="patch-text">About Me</text>
         </g>
       </Link>
 
@@ -39,9 +39,9 @@ export default function InteractivePatches() {
         <g className="patch-group">
           <polygon
             className="patch"
-            points="1196,731.5 1078,759.5 1099.5,920 1226,911.5 1226,911.5 1226,813 1239,797 1196,731.5"
+            points="1194,376.5 1113.5,520 1161,644 1246,545 1348,564 1194,376.5"
           />
-          <text x="1150" y="830" className="patch-text">LinkedIn</text>
+          <text x="1220" y="480" className="patch-text">LinkedIn</text>
         </g>
       </Link>
 
@@ -52,19 +52,18 @@ export default function InteractivePatches() {
             points="340,671 295,829 516,856 548,750 516,734.5 516,671 340,671"
           />
           <text x="420" y="750" className="patch-text" fontSize="20">
-            <tspan x="400" dy="0">Software</tspan>
-            <tspan x="430" dy="35">Engineer</tspan>
+            Blogs
           </text>
         </g>
       </Link>
 
-      <Link href="" id="location-link" className="patch-link">
+      <Link href="" id="recipe-link" className="patch-link">
         <g className="patch-group">
           <polygon
             className="patch"
             points="707.5,704.5 551,733 508,853 726.5,911.5 739.5,894.5 714.5,853 714.5,818.5 733.5,798.5 707.5,704.5"
           />
-          <text x="610" y="800" className="patch-text">📍 Tempe,AZ</text>
+          <text x="610" y="800" className="patch-text">Recipes</text>
         </g>
       </Link>
 
@@ -72,9 +71,9 @@ export default function InteractivePatches() {
         <g className="patch-group">
           <polygon
             className="patch"
-            points="441.5,393.5 403.5,554 633.5,515.5 579.5,380 441.5,393.5"
+            points="401.5,557 338.5,671 523,665.5 518.5,734.5 700.5,697 635.5,515.5 401.5,557"
           />
-          <text x="500" y="450" className="patch-text">1</text>
+          <text x="500" y="600" className="patch-text">Projects</text>
         </g>
       </Link>
 
@@ -132,9 +131,9 @@ export default function InteractivePatches() {
         <g className="patch-group">
           <polygon
             className="patch"
-            points="1194,376.5 1113.5,520 1161,644 1246,545 1348,564 1194,376.5"
+            points="1196,731.5 1078,759.5 1099.5,920 1226,911.5 1226,911.5 1226,813 1239,797 1196,731.5"
           />
-          <text x="1194" y="450" className="patch-text">7</text>
+          <text x="1150" y="830" className="patch-text">7</text>
         </g>
       </Link>
     </svg>

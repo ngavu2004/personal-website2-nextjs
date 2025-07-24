@@ -97,9 +97,8 @@ svg {
     transition: all 0.3s ease;
 }
 
-#about-link .patch-text,
-#job-link .patch-text,
-#location-link .patch-text {
+#about-link .patch-text
+{
     opacity: 1; /* Show text by default for the About patch */
     font-size: 2rem;
     text-shadow: 2px 2px 4px var(--cardigan-blue);
