@@ -25,8 +25,11 @@ export default function Home() {
         </div>
       </div>
       
-      <BackgroundImage />
-      <InteractivePatches />
+      <div className='svg-container'>
+        <BackgroundImage />
+        <InteractivePatches />
+      </div>
+      
     </div>
   )
 }
